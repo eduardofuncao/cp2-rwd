@@ -16,7 +16,7 @@ function App() {
   return (
     <>
     <Router>
-      <div className='bg-[#35393C] min-h-screen text-[#FBFBFB]'>
+      <div className='bg-[#35393C] min-h-screen text-[#FBFBFB] box-border'>
         <div className="w-[60%] m-auto font-sans">
           <header className="text-5xl" >
             <h1 className="">Checkpoint 2 - RWD</h1>
@@ -37,7 +37,7 @@ function App() {
                   <Route path="/fotos" element={<Fotos/>}/>
             </Routes>
           </main>
-          <footer className="flex justify-center items-center rounded-t-xl absolute bottom-0 w-[50%] h-12 bg-[#F9627D] ">
+          <footer className="flex justify-center items-center rounded-t-xl fixed bottom-0 w-[50%] h-12 bg-[#F9627D] ">
             <p>Eduardo Função - RM553362</p>
           </footer>
         </div>
