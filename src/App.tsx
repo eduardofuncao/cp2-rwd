@@ -22,7 +22,7 @@ function App() {
             <h1 className="">Checkpoint 2 - RWD</h1>
           </header>
           <nav>
-            <ul className="flex w-60 space-x-4 p-3 bg-[#F9627D] rounded-xl mb-4 mt-4">
+            <ul className="flex w-64 space-x-4 p-3 bg-[#F9627D] rounded-xl mb-4 mt-4">
               <li><Link to='/' className="hover:text-blue-500">Início</Link></li>
               <li><Link to='/posts'className="hover:text-blue-500">Posts</Link></li>
               <li><Link to='/usuarios'className="hover:text-blue-500">Usuários</Link></li>
