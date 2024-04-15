@@ -5,6 +5,9 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import { FaUser, FaGithub } from "react-icons/fa";
+import { MdClass } from 'react-icons/md';
+
 import './App.css'
 import Home from './components/Home';
 import Posts from './components/Posts';
@@ -37,8 +40,14 @@ function App() {
                   <Route path="/fotos" element={<Fotos/>}/>
             </Routes>
           </main>
-          <footer className="flex justify-center items-center rounded-t-xl fixed bottom-0 w-[50%] h-12 bg-[#F9627D] ">
+          <footer className="gap-2 flex justify-center items-center rounded-t-xl fixed bottom-0 w-[50%] h-12 bg-[#F9627D] ">
+            <FaUser className=''></FaUser>
             <p>Eduardo Função - RM553362</p>
+            <MdClass></MdClass>
+            <p>1TDSZ</p>
+            <FaGithub></FaGithub>
+            <p className='hover:font-extrabold'><a href="https://github.com/eduardofuncao/cp2-rwd">GitHub</a></p>
+
           </footer>
         </div>
       </div>
