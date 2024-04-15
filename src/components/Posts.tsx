@@ -9,7 +9,7 @@ const Posts: React.FC = () =>{
             try{
                 const response = await fetch(url);
                 if (!response.ok){
-                    throw new Error('Erro ao Posts');
+                    throw new Error('Erro ao carreagar posts');
                 }
                 const data = await response.json();
                 setPosts(data);
@@ -24,7 +24,7 @@ const Posts: React.FC = () =>{
     
     return(
         <div>
-            <h1 className="text-8xl mb-4">Posts</h1>
+            <h1 className="text-6xl mb-4">Posts</h1>
                 
             <ul className="flex flex-wrap w-[105%] -ml-8">
                 {posts.splice(0,9).map((post,index) =>(

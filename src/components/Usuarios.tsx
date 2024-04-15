@@ -24,7 +24,7 @@ const Usuarios: React.FC = () =>{
     
     return(
       <div>
-        <h1 className="text-8xl mb-4">Usuários</h1>
+        <h1 className="text-6xl mb-4">Usuários</h1>
         <table className="bg-[#FBFBFB]  text-[#F9627D] rounded-2xl border-separate p-4">
           <thead>
             <tr>
@@ -32,6 +32,7 @@ const Usuarios: React.FC = () =>{
               <th>Nome</th>
               <th>Username</th>
               <th>Email</th>
+              <th>Endereço</th>
             </tr>
           </thead>
           <tbody>
@@ -41,6 +42,7 @@ const Usuarios: React.FC = () =>{
                 <td>{user.name}</td>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
+                <td>{user.address.street}, {user.address.city}</td>
               </tr>
             ))}
           </tbody>
@@ -50,4 +52,3 @@ const Usuarios: React.FC = () =>{
 }
  
 export default Usuarios;
-

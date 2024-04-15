@@ -10,7 +10,7 @@ const Fotos: React.FC = () =>{
             try{
                 const response = await fetch(url);
                 if (!response.ok){
-                    throw new Error('Erro ao Fotos');
+                    throw new Error('Erro ao carregar Fotos');
                 }
                 const data = await response.json();
                 setFotos(data);
@@ -26,8 +26,7 @@ const Fotos: React.FC = () =>{
 
     return(
         <div>
-            <h1 className="text-8xl mb-4">Fotos</h1>
-                
+            <h1 className="text-6xl mb-4">Fotos</h1> 
             <ul className="flex flex-wrap w-[105%] -ml-8">
                 {fotos.splice(0,9).map((foto,index) =>(
                 <li key={index} className='min-w-[180px]  w-[30%] bg-[#FBFBFB] shadow rounded-lg mb-4 mr-4 px-3 text-[#F9627D]'>
