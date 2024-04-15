@@ -25,15 +25,15 @@ const Posts: React.FC = () =>{
     return(
         <div>
             <h1 className="text-8xl mb-4">Posts</h1>
-            
+                
             <ul className="flex flex-wrap w-[105%] -ml-8">
-            {posts.splice(0,9).map((post,index) =>(
-            <li key={index} className='min-w-[180px]  w-[30%] bg-[#FBFBFB] shadow rounded-lg mb-4 mr-4 px-3 text-[#F9627D]'>
-                <h2 className='font-semibold text-2xl '>{post.title}</h2>
-                <p>{post.body}</p>
-            </li>
-            ))}
-        </ul>
+                {posts.splice(0,9).map((post,index) =>(
+                <li key={index} className='min-w-[180px]  w-[30%] bg-[#FBFBFB] shadow rounded-lg mb-4 mr-4 px-3 text-[#F9627D]'>
+                    <h2 className='font-semibold text-2xl '>{post.title}</h2>
+                    <p>{post.body}</p>
+                </li>
+                ))}
+            </ul>
             
 
         </div>
