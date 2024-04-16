@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 
 const Posts: React.FC = () =>{
     const [posts, setPosts] = useState([]);
-
+    
     useEffect(() => {
+        // faz requisição ao api para coletar os dados dos posts
         const fetchPosts = async () =>{
             const url = `https://jsonplaceholder.typicode.com/posts`;
             try{
@@ -27,6 +28,7 @@ const Posts: React.FC = () =>{
             <h1 className="text-6xl mb-4">Posts</h1>
                 
             <ul className="flex flex-wrap w-[105%] -ml-8">
+                {/*splice para exibir somente 9 primeiros posts*/}
                 {posts.splice(0,9).map((post,index) =>(
                 <li key={index} className='min-w-[180px]  w-[30%] bg-[#FBFBFB] shadow rounded-lg mb-4 mr-4 px-3 text-[#F9627D]'>
                     <h2 className='font-semibold text-2xl '>{post.title}</h2>

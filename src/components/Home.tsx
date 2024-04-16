@@ -2,7 +2,9 @@ import Stick from '../assets/stick2.svg'
 
 const Home: React.FC = () =>{
     return(
+        
         <div className='flex items-center'>
+            {/*Homepage do aplicativo*/}
             <div>
                 <h1 className="text-3xl">Prova de Responsive Web Development</h1>
                 <p className='mt-6'>Utilize a barra de navegação para acessar as páginas</p>

@@ -4,6 +4,7 @@ const Usuarios: React.FC = () =>{
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
+      // Faz requisição ao api para coletar dados dos usuários
         const fetchUsers = async () =>{
             const url = `https://jsonplaceholder.typicode.com/users/`;
             try{
@@ -24,6 +25,7 @@ const Usuarios: React.FC = () =>{
     return(
       <div>
         <h1 className="text-6xl mb-4">Usuários</h1>
+        {/*Povoa tabela com os dados do api*/}
         <table className="bg-[#FBFBFB]  text-[#F9627D] rounded-2xl border-separate p-4">
           <thead>
             <tr>

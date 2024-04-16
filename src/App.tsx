@@ -26,6 +26,7 @@ function App() {
             <h1 className='mr-8 text-xl flex gap-1 items-center'>Responsive Web <FaDev></FaDev></h1>
         </header>
 
+        {/*Barra de navegação*/}
         <nav>
           <ul className="flex w-[50%] min-w-[250px] space-x-4 p-3 bg-[#F9627D] rounded-r-xl mb-4 mt-4 shadow-2xl justify-end">
             <li><Link to='/' className="hover:text-red-950">Início</Link></li>
@@ -39,6 +40,7 @@ function App() {
           
           
           <main className="flex-grow mb-4">
+            {/*Roteamento de páginas*/}
             <Routes>
                   <Route path="/" element={<Home/>}/>
                   <Route path="/posts" element={<Posts/>}/>
