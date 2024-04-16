@@ -19,7 +19,6 @@ const Usuarios: React.FC = () =>{
             }
         };
         fetchUsers();
-
     },[]);
     
     return(
