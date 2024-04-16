@@ -9,7 +9,6 @@ import { FaUser, FaGithub } from "react-icons/fa";
 import { MdClass } from 'react-icons/md';
 import { FaFlagCheckered, FaDev } from 'react-icons/fa6';
 
-import './App.css'
 import Home from './components/Home';
 import Posts from './components/Posts';
 import Usuarios from './components/Usuarios';
